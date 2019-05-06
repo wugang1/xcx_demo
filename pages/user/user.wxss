@@ -1,1 +1,15 @@
 /* pages/user/user.wxss */
+view{
+  margin-top:60rpx;
+}
+.fl {
+  width: 80%;
+}
+.fl li{
+  display: inline-block;
+  margin-top:20rpx;
+  margin-left: 55rpx;
+  width:10%;
+  padding: 20rpx;
+  border: 1rpx solid red;
+}

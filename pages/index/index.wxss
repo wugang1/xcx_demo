@@ -1,21 +1,30 @@
 /**index.wxss**/
-.userinfo {
+.search
+{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  width:88%;
+  height:60rpx;
+  background-color:whitesmoke;
+  margin-top: 5%;
+  border:1rpx solid whitesmoke;
+  border-radius: 50rpx;
+  margin-left: 40rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+/* 搜索框提示文字样式 */
+.search input
+{
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+/* 搜索框小图标 */
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-left: 20rpx;
 }

@@ -4,10 +4,12 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    inputValue:''
+  },
+  inputBind:function(event){
+    this.setData({
+      inputValue: event.detail.value
+    })
   },
   //事件处理函数
   bindViewTap: function() {

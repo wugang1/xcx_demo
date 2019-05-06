@@ -1,2 +1,6 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view>
+  <ul class="fl">
+    <li wx:for="{{list}}" wx:key="key">{{item.n}}</li> 
+  </ul>
+</view>

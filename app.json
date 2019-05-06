@@ -2,12 +2,28 @@
   "pages": [
     "pages/index/index",
     "pages/user/user"
-  
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "腐腐Gay",
     "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#282828",
+    "selectedColor": "#E31436",
+    "backgroundColor": "#FFFFFF",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/image/shouye.png",
+      "selectedIconPath": "pages/image/djsy.png"
+    },{
+      "pagePath": "pages/user/user",
+      "text": "分区",
+      "iconPath": "pages/image/fenlei.png",
+      "selectedIconPath": "pages/image/djfl.png"
+    }]
   }
 }
