@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/fenqu/fenqu"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,16 +15,19 @@
     "color": "#282828",
     "selectedColor": "#E31436",
     "backgroundColor": "#FFFFFF",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "pages/image/shouye.png",
-      "selectedIconPath": "pages/image/djsy.png"
-    },{
-      "pagePath": "pages/user/user",
-      "text": "分区",
-      "iconPath": "pages/image/fenlei.png",
-      "selectedIconPath": "pages/image/djfl.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/shouye.png",
+        "selectedIconPath": "pages/image/djsy.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "分区",
+        "iconPath": "pages/image/fenlei.png",
+        "selectedIconPath": "pages/image/djfl.png"
+      }
+    ]
   }
 }

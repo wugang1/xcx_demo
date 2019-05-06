@@ -5,30 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [
-       { n: "番剧" },
-       { n: "电影" }, 
-       { n: "记录" }, 
-       { n: "战争" }, 
-       { n: "小片" },
-       { n: "番剧" },
-       { n: "电影" },
-       { n: "记录" },
-       { n: "战争" },
-       { n: "小片" },
-       { n: "番剧" },
-       { n: "电影" },
-       { n: "记录" },
-       { n: "战争" },
-       { n: "小片" } 
+      tp:[
+      
       ]
   },
-
+  tzfq: function (e) {
+    var then=this;
+    // console.log(e.currentTarget.dataset.key)   
+    var app = getApp();
+    app.globalData.fenqu = e.currentTarget.dataset.key;
+    app.globalData.fuye = this.data;
+    app.globalData.fqName = this.data.tp[e.currentTarget.dataset.key].catename;
+    app.globalData.fqId = this.data.tp[e.currentTarget.dataset.key].id;
+    wx.navigateTo({
+      url: '../fenqu/fenqu'
+    })
+ 
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+   var then=this;
+   
+   wx.request({
+     url: 'http://www.fufugay.com/index/api/cate',
+     method:'GET',
+     success:function(res){
+       then.setData({
+         tp: res.data
+       })
+        console.log(then.data);
+     }
+   });
+   
   },
 
   /**

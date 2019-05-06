@@ -34,6 +34,12 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    fenqu:"",
+    fuye:"",
+    fqName:'',
+    fqId:'',
+    //标签名字（6个死的）
+    bqName:""
   }
 })

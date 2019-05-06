@@ -1,0 +1,54 @@
+/* pages/fenqu/fenqu.wxss */
+.nav{
+  width: 100%;
+}
+.box {  
+  white-space: nowrap;
+  font-size: 30rpx;
+  margin-left:40rpx;
+}
+.box-item{
+  padding:5rpx 20rpx 5rpx 20rpx;
+  height:100%;
+  box-sizing: border-box;
+  display: inline-block
+}
+.item-hover{
+  border-radius: 10rpx;
+  background: #FFF0F5;
+}
+.new{
+  height:260rpx;
+  position: relative;
+  font-size: 30rpx;
+  margin-top:40rpx;
+  margin-left:40rpx;
+}
+.new image{
+ 
+  width:270rpx;
+  height:230rpx;
+  border-radius: 10rpx;
+}
+.new-title{
+  left:280rpx;
+  position: absolute;
+}
+.new-author,.new-zan,.new-click{
+  color:#FF69B4;
+}
+.new-author{
+  left:280rpx;
+  top:120rpx;
+  position: absolute;
+}
+.new-zan{
+  left:500rpx;
+  top:185rpx;
+  position: absolute;
+}
+.new-click{
+  left:280rpx;
+  top:185rpx;
+  position: absolute;
+}

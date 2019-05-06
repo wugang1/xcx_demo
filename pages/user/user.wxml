@@ -1,6 +1,9 @@
 <!--pages/user/user.wxml-->
-<view>
-  <ul class="fl">
-    <li wx:for="{{list}}" wx:key="key">{{item.n}}</li> 
-  </ul>
+<view class="body">
+  <view class="fl">
+    <view class="flbox" wx:for="{{tp}}" wx:key="index" bindtap="tzfq" data-key="{{index}}">
+        <image  src='{{item.imgsrc}}'></image>
+       <text> {{item.catename}}</text>
+    </view> 
+  </view>   
 </view>
