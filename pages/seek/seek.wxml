@@ -1,0 +1,20 @@
+<!--pages/seek/seek.wxml-->
+ <view class='search'>
+    <image class="" src='../image/ss.png'></image>
+    <input type='text' placeholder='输入你想要的内容' bindinput='inputBind' bindconfirm="achieve" ></input>
+  </view>
+  <view class='hr' ></view>
+  <view wx:if='{{inputValue1}}' class='seek-box'>
+      <view wx:for="{{seek}}" class='seek-item'>
+        <view bindtap='jumpitem' data-title="{{item.title}}">{{item.title}}</view>
+      </view>
+    <view style='color:#aaffaa' wx:if="{{seek==''}}">
+      暂无搜索结果
+    </view>
+  </view>
+  <view wx:else class='seek-box'>
+    <view>大家都在搜</view>
+    <view class='seek-seek'>
+      <view wx:for="{{list}}" data-title="{{item.title}}" bindtap='item'>{{item.title}}</view>
+    </view>
+  </view>

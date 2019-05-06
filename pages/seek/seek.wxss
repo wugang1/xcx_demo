@@ -1,0 +1,59 @@
+/* pages/seek/seek.wxss */
+.search
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:88%;
+  height:60rpx;
+  background-color:whitesmoke;
+  margin-top: 5%;
+  border:1rpx solid whitesmoke;
+  border-radius: 50rpx;
+  margin-left: 40rpx;
+}
+/* 搜索框提示文字样式 */
+.search input
+{
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 20rpx;
+}
+/* 搜索框小图标 */
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-left: 20rpx;
+}
+/* 分割线 */
+.hr{
+  border-top:1rpx solid #ddd;width:100%;margin:20rpx 0
+}
+/* 搜索结果 */
+.seek-box{
+  width:88%;
+  margin: 0 auto;
+  /* border: 2rpx solid #ddd; */
+}
+/*搜索文字 */
+.seek-item{
+ border-bottom:1rpx solid #ddd;
+ padding-bottom:10rpx;
+ padding-top:10rpx;
+}
+/* 大家都在搜索 */
+.seek-seek{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.seek-seek>view{
+  border-radius: 10rpx;
+  padding: 10rpx 20rpx;
+  background: #ddd;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  font-size: 34rpx;
+  color: #8e8e8e;
+}

@@ -1,6 +1,72 @@
 <!--index.wxml-->
-<!-- 搜索 -->
- <view class='search'>
-    <image class="" src='../image/ss.png'></image>
-    <input type='text' placeholder='输入你想要的内容'value="{{inputValue}}" bindinput='inputBind'></input>
+<include src="../common/herder.wxml"/>
+<view class="body">
+  <view class='bodyitem' wx:if="{{checked==17}}" wx:for="{{listitem}}" wx:key="{{index}}" bindtap='jump_item' data-id='{{item.id}}'>
+    <view class='bodyitem-item' >
+    <view style=" position: relative">
+         <image src='{{item.thumb}}' style='width:100%;height:400rpx; border-radius:24rpx'></image>
+         <view class='imgfont'>
+          <text>{{item.click}}播放次数</text>
+          <text>{{item.zan}}人点赞</text>
+         </view>
+    </view>
+      <view class='felx'>
+        <image style='width:70rpx;height:70rpx;border-radius:50%' src='http://www.sucaitianxia.com/sheji/pic/200902/20090208015345473.jpg'></image>
+         <view>{{item.title}}</view>
+      </view>
+    </view>
+   
   </view>
+
+
+  <!-- dier -->
+   <view class='bodyitem' wx:if="{{checked==16}}" wx:for="{{listitem}}" wx:key="{{index}}" bindtap='jump_item' data-id='{{item.id}}'>
+    <view class='bodyitem-item' >
+    <view style=" position: relative">
+         <image src='{{item.thumb}}' style='width:100%;height:400rpx; border-radius:24rpx'></image>
+         <view class='imgfont'>
+          <text>{{item.click}}播放次数</text>
+          <text>{{item.zan}}人点赞</text>
+         </view>
+    </view>
+      <view class='felx'>
+        <image style='width:70rpx;height:70rpx;border-radius:50%' src='http://www.sucaitianxia.com/sheji/pic/200902/20090208015345473.jpg'></image>
+         <view>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- disan -->
+   <view class='bodyitem' wx:if="{{checked==18}}" wx:for="{{listitem}}" wx:key="{{index}}" bindtap='jump_item' data-id='{{item.id}}'>
+    <view class='bodyitem-item' >
+    <view style=" position: relative">
+         <image src='{{item.thumb}}' style='width:100%;height:400rpx; border-radius:24rpx'></image>
+         <view class='imgfont'>
+          <text>{{item.click}}播放次数</text>
+          <text>{{item.zan}}人点赞</text>
+         </view>
+    </view>
+      <view class='felx'>
+        <image style='width:70rpx;height:70rpx;border-radius:50%' src='http://www.sucaitianxia.com/sheji/pic/200902/20090208015345473.jpg'></image>
+         <view>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- disi -->
+   <view class='bodyitem' wx:if="{{checked==19}}" wx:for="{{listitem}}" wx:key="{{index}}" bindtap='jump_item' data-id='{{item.id}}'>
+    <view class='bodyitem-item' >
+    <view style=" position: relative">
+         <image src='{{item.thumb}}' style='width:100%;height:400rpx; border-radius:24rpx'></image>
+         <view class='imgfont'>
+          <text>{{item.click}}播放次数</text>
+          <text>{{item.zan}}人点赞</text>
+         </view>
+    </view>
+      <view class='felx'>
+        <image style='width:70rpx;height:70rpx;border-radius:50%' src='http://www.sucaitianxia.com/sheji/pic/200902/20090208015345473.jpg'></image>
+         <view>{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,4 +1,12 @@
 /**index.wxss**/
+/* t头部 */
+.herder{ border-bottom: 1rpx solid #ddd;
+  padding-bottom: 20rpx;
+  position: fixed;
+  width: 100%;
+  background:#fff;
+ z-index: 999;
+}
 .search
 {
   display: flex;
@@ -27,4 +35,54 @@
   width:40rpx;
   height:40rpx;
   padding-left: 20rpx;
+}
+/* 导航 */
+.nav{
+  width:88%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+  margin-top: 10rpx;
+}
+.nav>view{
+  font-size: 30rpx;
+}
+/* 选中字体样式 */
+.fontstyle{
+  color:#E31436;
+  border-bottom: 1rpx solid #E31436;
+  padding-bottom: 10rpx
+}
+/* 内容 */
+.body{
+  padding-top:30%;
+}
+.bodyitem{
+  border-bottom: 1rpx solid #ddd;
+}
+.bodyitem-item{
+  width: 88%;
+  margin:15rpx auto;
+  
+}
+/* 图片文字 */
+.imgfont{
+  position: absolute;
+  bottom: 20rpx;
+  left: 100rpx
+}
+.imgfont text{
+  margin-right: 50rpx;
+  font-weight: 600;
+  color:#fff;
+  font-size: 30rpx
+}
+/* title */
+.felx{
+  display: flex;
+  align-items: center
+}
+.felx>view{
+  font-size: 30rpx;
 }

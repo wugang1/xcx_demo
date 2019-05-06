@@ -4,46 +4,76 @@ const app = getApp()
 
 Page({
   data: {
-    inputValue:''
+    inputValue:'',
+    checked:17,
+    list:"",
+    listitem:""
+  },
+  jump_item(e){
+    console.log(e.currentTarget.dataset.id
+)
   },
   inputBind:function(event){
     this.setData({
       inputValue: event.detail.value
     })
   },
-  //事件处理函数
-  bindViewTap: function() {
+  seek(){
     wx.navigateTo({
-      url: '../user/user'
+      url: '/pages/seek/seek',
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
+  checked(e){
+    this.setData({
+      checked: e.target.dataset.num
+    })
+    
+      wx.request({
+        url: 'http://www.fufugay.com/index/api/catecontent',
+        data: {
+          cateid: e.target.dataset.num
+        },
+        method: 'POST',
+        header: {
+          "Content-Type": 'application/x-www-form-urlencoded',
+        },
+        success: (res) => {
+          console.log(res.data)
           this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
+            listitem: res.data
           })
         }
       })
-    }
+    
+  
+    
+  },
+  onLoad: function () {
+   wx.request({
+     url: 'http://www.fufugay.com/index/api/cate',
+     success:(res)=>{
+       console.log(res.data)
+       this.setData({
+         list:res.data
+       })
+     }
+   })
+    wx.request({
+      url: 'http://www.fufugay.com/index/api/catecontent',
+      data:{
+        cateid: this.data.checked
+      },
+      method: 'POST',
+      header: {
+        "Content-Type": 'application/x-www-form-urlencoded',
+      },
+      success: (res) => {
+        console.log(res.data)
+        this.setData({
+          listitem: res.data
+        })
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)

@@ -1,0 +1,28 @@
+<!--pages/seekitem/seekitem.wxml-->
+<!--<view class='herder'>
+     搜索
+    <view class='search'>
+        <image class="" src='../image/ss.png'></image>
+        <input type='text' placeholder='输入你想要的内容'value="{{inputValue}}" bindinput='inputBind' bindfocus='seek'></input>
+      </view>
+      
+  </view> -->
+  <view class='nav'>
+        <view  class='{{checked==1? "fontstyle":""}}' bindtap='checked' data-num="1">默认排序</view>
+           <view  class='{{checked==2? "fontstyle":""}}' bindtap='checked' data-num="2">播放多</view>
+              <view  class='{{checked==3? "fontstyle":""}}' bindtap='checked' data-num="3">新发布</view>
+      </view>
+ <view class='aa'></view>
+<view class="body" wx:for="{{list}}">
+  <view class='body_item'>
+    <view class='body_item_left'>
+      <image src='{{item.thumb}}'></image>
+    </view>
+   
+    <view class='body_item_right'>
+      <view>{{item.title}}</view>
+      <view class='yc'><text style='text-overflow:ellipsis'>{{item.content}}</text></view>
+      <view class='btn'>立即查看</view>
+    </view>
+  </view>
+</view>
