@@ -2,9 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/user/user",
-
     "pages/fenqu/fenqu",
-
     "pages/seek/seek",
     "pages/seekitem/seekitem"
 
