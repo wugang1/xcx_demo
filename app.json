@@ -7,7 +7,6 @@
     "pages/seekitem/seekitem",
     "pages/video/video_xqy/video_xqy",
     "pages/video/video_twb/video_twb"
-
   ],
   "window": {
     "backgroundTextStyle": "light",

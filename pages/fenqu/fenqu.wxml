@@ -12,7 +12,7 @@
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
@@ -20,28 +20,28 @@
        <text class="new-zan">【点赞】{{item.zan}}</text>
       
     </view>
-    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
         <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
@@ -54,14 +54,14 @@
       <view class="{{fjNum==index?'box-item item-hover':'box-item'}} " wx:for="{{biaoqian}}" wx:key="{{index}}" data-key="{{index}}" bindtap='fjPro'>{{item.labelname}}</view>
     </scroll-view>
     <view style='height:30rpx;'></view>
-    <view class="new"wx:if="{{fjNum==0}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==0}}" wx:for="{{movie}}"wx:key="{{index}}" data-key="{{index}}"bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
@@ -69,28 +69,28 @@
        <text class="new-zan">【点赞】{{item.zan}}</text>
       
     </view>
-    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
         <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
@@ -103,14 +103,14 @@
       <view class="{{fjNum==index?'box-item item-hover':'box-item'}} " wx:for="{{biaoqian}}" wx:key="{{index}}" data-key="{{index}}" bindtap='fjPro'>{{item.labelname}}</view>
     </scroll-view>
     <view style='height:30rpx;'></view>
-    <view class="new"wx:if="{{fjNum==0}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==0}}" wx:for="{{movie}}"wx:key="{{index}}" data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
@@ -118,28 +118,28 @@
        <text class="new-zan">【点赞】{{item.zan}}</text>
       
     </view>
-    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
         <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
@@ -152,14 +152,14 @@
       <view class="{{fjNum==index?'box-item item-hover':'box-item'}} " wx:for="{{biaoqian}}" wx:key="{{index}}" data-key="{{index}}" bindtap='fjPro'>{{item.labelname}}</view>
     </scroll-view>
     <view style='height:30rpx;'></view>
-    <view class="new"wx:if="{{fjNum==0}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==0}}" wx:for="{{movie}}"wx:key="{{index}}" data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==1}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
@@ -167,28 +167,28 @@
        <text class="new-zan">【点赞】{{item.zan}}</text>
       
     </view>
-    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==2}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==3}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==4}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
        <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
        <text class="new-click">【次数】：{{item.click}}</text>
        <text class="new-zan">【点赞】{{item.zan}}</text>
     </view>
-    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}">
+    <view class="new"wx:if="{{fjNum==5}}" wx:for="{{movie}}"wx:key="{{index}}"data-key="{{index}}" bindtap='fqclick'>
         <image src="{{item.thumb}}"></image>
        <text class="new-title">【电影】：{{item.title}}</text>
        <text class="new-author">【up】：{{item.author}}</text>
