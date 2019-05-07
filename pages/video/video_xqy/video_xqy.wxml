@@ -1,0 +1,38 @@
+<view class='avc2'>
+<view class="xqy_1"  wx:for="{{list}}" wx:key="{{index}}"> 
+  <view>{{item.title}}</view>
+</view>
+<!-- 年月日 观看次数 点赞 -->
+<view class="xqy_2" wx:for="{{list}}" wx:key="{{index}}">
+ <image class='tubiao'></image>
+  <text>{{time}}</text> 
+ <image class='tubiao'></image>
+ <text>观看 <text class='xqy_2_3'>{{item.click}}</text>次</text>
+ <image class='tubiao'></image>
+ <text>点赞 <text class='xqy_2_3'>{{item.zan}}</text> 次</text>
+</view>
+<view class='xqy_3'  wx:for="{{list}}" wx:key="{{index}}">
+   <view >
+   <image src='{{item.thumb}}' class='xqy_3_1'lazy-load='true'aspectFill></image>
+   </view>
+    <view class='box'>
+  <scroll-view class='sv' scroll-y='true' style='height:100%;'>
+   <view class='xqy_3_2'>{{item.content}}</view>
+   </scroll-view>
+</view>
+</view>
+<!-- 级数 -->
+
+<scroll-view scroll-x class="scroll-x">
+
+  <view  wx:for="{{sum}}" wx:key="{{index}}"  catchtap='jishu' data-key="{{index}}" class="view-parent">
+    <view  class="view-item" >第{{item}}级</view>
+    
+  </view>
+</scroll-view>
+<!-- 最下层 -->
+<view class='xqy_3'>
+   <view></view>
+   <view></view>
+</view>
+</view>
