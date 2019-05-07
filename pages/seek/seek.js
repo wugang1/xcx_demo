@@ -39,7 +39,10 @@ Page({
   // 大家都在搜
   item(e){
     console.log(e.target.dataset.title)
-
+    console.log(e.target.dataset.id)
+    wx.navigateTo({
+      url: '/pages/video/video_xqy/video_xqy?id=' + e.target.dataset.id,
+    })
   },
   // 搜索点击
   jumpitem(e){

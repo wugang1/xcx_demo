@@ -22,7 +22,7 @@
     <view class='body_item_right'>
       <view>{{item.title}}</view>
       <view class='yc'><text style='text-overflow:ellipsis'>{{item.content}}</text></view>
-      <view class='btn'>立即查看</view>
+      <view class='btn' bindtap='jump' data-id="{{item.id}}">立即查看</view>
     </view>
   </view>
 </view>

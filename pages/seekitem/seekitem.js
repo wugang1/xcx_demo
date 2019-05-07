@@ -32,6 +32,12 @@ Page({
 
     })
   },
+  jump(e){
+    console.log(e.target.dataset.id)
+    wx.navigateTo({
+      url: '/pages/video/video_xqy/video_xqy?id=' + e.target.dataset.id,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
