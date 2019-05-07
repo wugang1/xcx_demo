@@ -13,7 +13,7 @@
               <view  class='{{checked==3? "fontstyle":""}}' bindtap='checked' data-num="3">新发布</view>
       </view>
  <view class='aa'></view>
-<view class="body" wx:for="{{list}}">
+<view class="body" wx:for="{{list}}" wx:key="{{index}}">
   <view class='body_item'>
     <view class='body_item_left'>
       <image src='{{item.thumb}}'></image>

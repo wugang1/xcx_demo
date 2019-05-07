@@ -45,6 +45,16 @@ Page({
     })
     
   },
+  fqclick:function(e){
+    var key = e.currentTarget.dataset.key;
+
+    var id=this.data.movie[key].id;
+     wx.navigateTo({
+       url: '/pages/video/video_xqy/video_xqy?id=' + id,
+     })
+    console.log(id, 456456, key);
+  },
+    
   /**
    * 生命周期函数--监听页面加载
    */

@@ -5,7 +5,7 @@
   </view>
   <view class='hr' ></view>
   <view wx:if='{{inputValue1}}' class='seek-box'>
-      <view wx:for="{{seek}}" class='seek-item'>
+      <view wx:for="{{seek}}" wx:key="{{index}}" class='seek-item'>
         <view bindtap='jumpitem' data-title="{{item.title}}">{{item.title}}</view>
       </view>
     <view style='color:#aaffaa' wx:if="{{seek==''}}">
@@ -16,5 +16,6 @@
     <view>大家都在搜</view>
     <view class='seek-seek'>
       <view wx:for="{{list}}" data-title="{{item.title}}" bindtap='item' data-id="{{item.id}}">{{item.title}}</view>
+      <view wx:for="{{list}}"wx:key="{{index}}" data-title="{{item.title}}" bindtap='item'>{{item.title}}</view>
     </view>
   </view>

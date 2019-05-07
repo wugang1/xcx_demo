@@ -5,6 +5,6 @@
         <input type='text' placeholder='输入你想要的内容'value="{{inputValue}}" bindinput='inputBind' bindfocus='seek'></input>
       </view>
       <view class='nav'>
-        <view wx:for='{{list}}' class='{{checked==item.id? "fontstyle":""}}' bindtap='checked' data-num="{{item.id}}">{{item.catename}}</view>
+        <view wx:for='{{list}}' wx:key="index"class='{{checked==item.id? "fontstyle":""}}' bindtap='checked' data-num="{{item.id}}">{{item.catename}}</view>
       </view>
   </view>
