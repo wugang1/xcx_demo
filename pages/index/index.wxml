@@ -1,6 +1,8 @@
 <!--index.wxml-->
 <include src="../common/herder.wxml"/>
+
 <view class="body">
+
   <view class='bodyitem' wx:if="{{checked==17}}" wx:for="{{listitem}}" wx:key="{{index}}" bindtap='jump_item' data-id='{{item.id}}'>
     <view class='bodyitem-item' >
     <view style=" position: relative">

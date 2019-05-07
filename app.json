@@ -4,7 +4,9 @@
     "pages/user/user",
     "pages/fenqu/fenqu",
     "pages/seek/seek",
-    "pages/seekitem/seekitem"
+    "pages/seekitem/seekitem",
+    "pages/video/video_xqy/video_xqy",
+    "pages/video/video_twb/video_twb"
 
   ],
   "window": {
