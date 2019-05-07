@@ -16,6 +16,5 @@
     <view>大家都在搜</view>
     <view class='seek-seek'>
       <view wx:for="{{list}}" data-title="{{item.title}}" bindtap='item' data-id="{{item.id}}">{{item.title}}</view>
-      <view wx:for="{{list}}"wx:key="{{index}}" data-title="{{item.title}}" bindtap='item'>{{item.title}}</view>
     </view>
   </view>
